@@ -34,6 +34,12 @@
   max-width: 1028px;
   min-width: 680px;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
+  .bind-width {
+    max-width: auto;
+    min-width: auto;
+  }
+}
 
 /* MAIN ============================================================ */
 body {
@@ -78,6 +84,16 @@ body {
 }
 #footer {
 	color: $gray-light;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
+  body {
+    min-width: auto;
+    width: 100vw;
+  }
+  .bg-overlay {
+    position: fixed;
+    top: 0px;
+  }
 }
 
 /* LANDING BANNER ===================================================== */
@@ -129,6 +145,29 @@ body {
     -moz-transform: translate(0%, -50%);
   }
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
+  .front-page-content {
+    width: 100vw !important;
+    position: fixed !important;
+    top: 20vh;
+    left: inherit;
+    transform: inherit !important;
+    -webkit-transform: inherit !important;
+    -moz-transform: inherit !important;
+  }
+  .tagline {
+    width: 92vw;
+    margin: 0 auto;
+  }
+  .tagline .main {
+    font-size: 13.5vw;
+    line-height: 13.5vw;
+  }
+  .tagline .sub {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+}
 
 /* HEADER ====================================================  */
 .header {
@@ -148,10 +187,25 @@ body {
   height: 40px;
   margin-top: 10px;
 }
-
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
+  .header-content {
+    width: 92vw;
+  }
+  .subscribe-mobile-wrapper {
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    background-color: black;
+    left: 0px;
+  }
+}
 /* SUBSCRIBE ====================================================  */
 .subscribe-wrapper {
   right: 0px;
+  position: absolute;
   top: 14px;
 }
 .subscribe-input {
@@ -164,6 +218,7 @@ body {
   font-family: 'Montserrat-Regular';
   width: 200px;
 }
+
 .subscribe-input:focus {
   outline: 0;
   background-color: rgba(0,0,0,.4);
@@ -209,7 +264,16 @@ body {
   top: 0px;
   right: 0px;
 }
-
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
+  .subscribe-wrapper {
+    right: auto;
+    top: auto !important;
+    position: relative !important;
+  }
+  .subscribe-input {
+    width: 48vw;
+  }
+}
 /* SOCIAL MEDIA FOLLOW ICONS ======================================== */
 .social-icon {
   width: 33px;
