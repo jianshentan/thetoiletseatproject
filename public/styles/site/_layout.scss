@@ -81,6 +81,7 @@ body {
   background-color: black;
   opacity: 0.15;
   z-index: -1;
+  top: 0px;
 }
 #footer {
 	color: $gray-light;
@@ -92,7 +93,6 @@ body {
   }
   .bg-overlay {
     position: fixed;
-    top: 0px;
   }
 }
 
