@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "node keystone.js",
-    "postinstall": "npm rebuild grunt-sass node-sass; # BUGFIX gulp libsass bindings not found error - https://github.com/dlmanning/gulp-sass/issues/174"
+    "preinstall": "npm rebuild grunt-sass node-sass; # BUGFIX gulp libsass bindings not found error - https://github.com/dlmanning/gulp-sass/issues/174"
   },
   "main": "keystone.js"
 }
