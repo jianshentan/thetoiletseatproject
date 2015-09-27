@@ -34,7 +34,7 @@
     "npm": ">=1.3.14"
   },
   "scripts": {
-    "preinstall": "npm rebuild node-sass",
+    "postinstall": "npm rebuild node-sass",
     "start": "node keystone.js"
   },
   "main": "keystone.js"
